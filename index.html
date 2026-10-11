@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#F5F3EE">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>宅卫 · 空置房管家</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon-180.png">
+</head>
+<body>
+<div id="app">
+
+  <!-- 顶部：品牌 + 角色切换 -->
+  <header class="topbar">
+    <div class="brand">宅卫<span>空置房管家</span></div>
+    <div class="seg small" id="roleSeg">
+      <button data-v="owner">🏠 业主端</button>
+      <button data-v="keeper">🧹 管家端</button>
+    </div>
+  </header>
+
+  <!-- 主视图（按角色渲染） -->
+  <main id="mainView"></main>
+
+  <footer class="footer">
+    <button class="link" id="btnExport">导出数据</button> ·
+    <button class="link" id="btnImport">导入数据</button> ·
+    <span class="muted">演示：地址加 ?demo=1</span>
+  </footer>
+</div>
+
+<!-- 通用弹层 -->
+<div class="mask" id="mask">
+  <div class="modal" id="modal"></div>
+</div>
+
+<!-- 报告分享浮层 -->
+<div class="share-mask" id="shareMask">
+  <div class="share-wrap">
+    <img id="shareImg" alt="宅卫巡检报告卡">
+    <div class="share-tip">长按图片保存到相册 · 发给家人或物业</div>
+    <button class="btn-ghost" id="btnCloseShare">关闭</button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

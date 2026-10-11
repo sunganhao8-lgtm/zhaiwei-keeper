@@ -1,0 +1,4 @@
+shot_*.png
+*.png
+!icon-*.png
+!apple-touch-icon-180.png
