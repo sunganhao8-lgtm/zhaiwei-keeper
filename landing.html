@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#2F6B4F">
+<title>宅卫 · 空置房管家 — 空着的房子，有人替你看着</title>
+<style>
+  :root{--bg:#F5F3EE;--card:#fff;--ink:#26332B;--ink2:#8B948C;--green:#2F6B4F;--green-soft:#E4EFE8;--warn:#C94040;--line:#E4E1D8;--r:18px}
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);max-width:520px;margin:0 auto;padding:0 18px calc(40px + env(safe-area-inset-bottom))}
+  .hero{background:var(--green);color:#fff;margin:0 -18px;padding:54px 24px 44px;text-align:center}
+  .hero .logo{font-size:15px;letter-spacing:4px;opacity:.85;margin-bottom:18px}
+  .hero h1{font-size:27px;line-height:1.45;font-weight:800}
+  .hero h1 b{color:#FFD98A}
+  .hero p{margin-top:14px;font-size:14px;line-height:1.7;opacity:.88}
+  .cta{display:flex;flex-direction:column;gap:11px;margin:-24px 6px 0;position:relative}
+  .btn{display:block;text-align:center;border-radius:999px;padding:15px;font-size:16px;font-weight:800;text-decoration:none;letter-spacing:1px}
+  .btn-main{background:var(--green);color:#fff;box-shadow:0 6px 18px rgba(47,107,79,.35)}
+  .btn-ghost{background:var(--card);color:var(--green);border:1.5px solid var(--line)}
+  section{margin-top:30px}
+  h2{font-size:19px;font-weight:800;margin-bottom:6px}
+  .sub{font-size:13px;color:var(--ink2);margin-bottom:14px}
+  .who{display:flex;gap:10px}
+  .who>div{flex:1;background:var(--card);border-radius:var(--r);padding:14px 10px;text-align:center}
+  .who .ico{font-size:26px}
+  .who b{display:block;font-size:14px;margin:7px 0 4px}
+  .who span{font-size:11.5px;color:var(--ink2);line-height:1.5;display:block}
+  .step{display:flex;gap:12px;background:var(--card);border-radius:var(--r);padding:14px 16px;margin-bottom:9px;align-items:flex-start}
+  .step .n{width:26px;height:26px;border-radius:50%;background:var(--green-soft);color:var(--green);font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+  .step b{font-size:14.5px}
+  .step p{font-size:12.5px;color:var(--ink2);margin-top:3px;line-height:1.55}
+  .report-mock{background:var(--card);border-radius:var(--r);padding:18px;box-shadow:0 4px 16px rgba(38,51,43,.07)}
+  .rm-head{font-size:11px;color:var(--ink2);text-align:center}
+  .rm-title{font-size:19px;font-weight:800;text-align:center;margin:4px 0 12px}
+  .rm-stats{display:flex;justify-content:space-around;text-align:center;padding:10px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .rm-stats b{font-size:22px;display:block}
+  .rm-stats .bad b{color:var(--warn)}
+  .rm-stats span{font-size:11px;color:var(--ink2)}
+  .rm-verdict{text-align:center;font-size:13.5px;font-weight:700;color:var(--warn);margin-top:12px}
+  .rm-ok{text-align:center;font-size:13.5px;font-weight:700;color:var(--green);margin-top:12px}
+  .price{display:flex;gap:10px}
+  .price>div{flex:1;background:var(--card);border-radius:var(--r);padding:15px 8px;text-align:center}
+  .price .cur{font-size:11px;color:var(--ink2)}
+  .price b{font-size:21px;color:var(--green)}
+  .price .hot{border:2px solid var(--green);position:relative}
+  .price .tag{position:absolute;top:-9px;left:50%;transform:translateX(-50%);background:var(--green);color:#fff;font-size:10px;border-radius:999px;padding:2px 8px;white-space:nowrap}
+  .trust{background:var(--green-soft);border-radius:var(--r);padding:16px}
+  .trust p{font-size:13px;line-height:2;color:var(--ink)}
+  .trust b{color:var(--green)}
+  footer{margin-top:30px;text-align:center;font-size:12px;color:var(--ink2);line-height:1.8}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="logo">宅卫 · ZHAIWEI</div>
+  <h1>空着的房子，<br><b>有人替你看着</b></h1>
+  <p>定期上门巡检 · 打卡留痕 · 电子报告 · 异常即报<br>对标的模式在美国叫 Home Watch，在日本叫空き家管理</p>
+</div>
+
+<div class="cta">
+  <a class="btn btn-main" href="index.html?demo=1">看 2 分钟真实演示 →</a>
+  <a class="btn btn-ghost" href="tel:10000000000">预约内测（首批 9 折）</a>
+</div>
+
+<section>
+  <h2>你是不是这种人</h2>
+  <div class="sub">人房分离，房子一空就是几个月</div>
+  <div class="who">
+    <div><div class="ico">🏝️</div><b>候鸟旅居</b><span>三亚的房子，人走了就空半年</span></div>
+    <div><div class="ico">🏙️</div><b>异地多房</b><span>一线城市打拼，老家有房空着</span></div>
+    <div><div class="ico">✈️</div><b>海外华侨</b><span>人在国外，国内房子没法照看</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>我们怎么管</h2>
+  <div class="sub">巡检员按你的套餐周期上门，一切手机里可见</div>
+  <div class="step"><div class="n">1</div><div><b>按周期上门</b><p>每周 1 次 / 每月 2 次 / 每月 1 次，到店定位打卡，时间戳留痕</p></div></div>
+  <div class="step"><div class="n">2</div><div><b>逐项检查</b><p>通风、渗漏、马桶补水、霉斑、门窗、水电表……14 项标准清单，✓/⚠ 逐项记录</p></div></div>
+  <div class="step"><div class="n">3</div><div><b>现场拍照</b><p>关键项拍照存证，异常自动附处置建议（渗漏→先关总阀再报修）</p></div></div>
+  <div class="step"><div class="n">4</div><div><b>电子报告</b><p>一张报告卡发到家人群："一切安好"四个字，值回月费</p></div></div>
+</section>
+
+<section>
+  <h2>你收到的报告长这样</h2>
+  <div class="sub">异常红色标出，附处理建议，可直接转发物业</div>
+  <div class="report-mock">
+    <div class="rm-head">2026-08-27 14:15 · 三亚 · 海棠湾</div>
+    <div class="rm-title">宅卫巡检报告</div>
+    <div class="rm-stats">
+      <div><b>12</b><span>检查项</span></div>
+      <div><b>11</b><span>正常</span></div>
+      <div class="bad"><b>1</b><span>异常</span></div>
+    </div>
+    <div class="rm-verdict">⚠ 霉斑检查异常 — 已附处理建议，建议 48h 内复查</div>
+    <div class="rm-ok" style="margin-top:8px;color:var(--ink2);font-weight:400;font-size:12px">上一次巡检：✓ 全部正常 · 打卡定位已记录</div>
+  </div>
+</section>
+
+<section>
+  <h2>定价</h2>
+  <div class="sub">对标美日市场：美国单次 $45-65，日本月付 ¥5000-10000</div>
+  <div class="price">
+    <div><span class="cur">每月 1 次</span><br><b>199</b><span class="cur"> 元/月</span></div>
+    <div class="hot"><span class="tag">多数人选</span><span class="cur">每月 2 次</span><br><b>299</b><span class="cur"> 元/月</span></div>
+    <div><span class="cur">每周 1 次</span><br><b>499</b><span class="cur"> 元/月</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="trust">
+    <p><b>把家门交给我们，红线在这里：</b><br>
+    ✓ 双人上门，全程时间戳留痕<br>
+    ✓ 每项检查拍照存证，报告可回溯<br>
+    ✓ 智能锁临时密码授权，不碰实体钥匙<br>
+    ✓ 家财险兜底 · 巡检员背景审查<br>
+    ✓ 一次失窃即赔付并永久终止合作——宁可不接单</p>
+  </div>
+</section>
+
+<footer>
+  宅卫 · 空置房管家 — 宅域旗下<br>
+  首批内测限量开放，预约从速
+</footer>
+
+</body>
+</html>
